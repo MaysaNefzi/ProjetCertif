@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="../css/style.css"/>
+    <link rel="stylesheet" href="../css/bootstrap.min.css"/>
+	<title>Ajout To Do</title>
+</head>
+<body class="bord">
+        <img src="../Images/formalab.png" width="150" alt="logo formalab"><br/>
+        <br>
+        <a href="home.html"target="_blank" class="btn btn-info">Acceuil</a><br>
+        <br>
+        <a href="connexion.html"target="_blank" class="btn btn-info">Deconnexion</a><br>
+        <br>
+        <hr>
+        <br>
+        <h1>Description</h1><br>
+        <form name="formulaire3" method="GET" action="../php/todo.php">
+            <input type="textarea" name="descrip" ><br>
+            <br>
+            Date: <br>
+            <input type="date" name="bday" id="bday" required/><br>
+            <br>
+            <br>
+            <input type="submit" value="Ajouter" class="btn btn-success"/>      
+            <input type="reset" value="Effacer"  class="btn btn-danger"/><br/>
+        </form>
+
+</body>
+</html>

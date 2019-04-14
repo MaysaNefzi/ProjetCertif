@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <META HTTP-EQUIV="Refresh"
+     CONTENT="0; URL= http://localhost/cv/html/home.html">
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="../css/style.css"/>
+    <link rel="stylesheet" href="../css/bootstrap.min.css"/>
+	<title>Inscription</title>
+</head>
+<body class="bord">
+     <img src="../Images/formalab.png" width="150" alt="logo formalab"><br/>
+     <br>
+     <a href="index.html"target="_blank" class="btn btn-info">Home</a><br>
+     <br>
+     <a href="connexion.html"target="_blank" class="btn btn-info">Connexion</a><br>
+     <br>
+     <hr>
+     <br>
+     <form class ="form-group" name="formulaire1" method="GET" action="../php/inscription.php ">
+        <div class ="form-group">
+                Nom   
+                <input type="text" name="Nom" id="txt_nom" Placeholder="votre nom de famille" required /><br/>
+        </div>
+        <div class ="form-group">
+                Prenom   
+                <input type="text" name="Prenom" id="txt_prenom" Placeholder="Votre prenom" required /><br/>
+        </div>
+         <div class ="form-group">
+                Tel   
+                <input type="text" name="Tel" id="txt_tel" Placeholder="votre numero de telephone" required /><br/>
+         </div >
+         <div class ="form-group">
+                Email    
+                <input type="email" name="E-mail" id="mail" Placeholder="Votre email" required/><br>
+         </div >
+         <div class ="form-group">
+                Date de naissance
+                <input type="date" name="bday" id="bday" required/><br>
+         </div>
+         <div class ="form-group">
+                <select>
+                        <option disabled selected>Nationalité</option>
+                        <option value="france">Française</option>
+                        <option value="tunis">Tunisienne</option>
+                        <option value="maroc">Marocainne</option>
+                        <option value="algerie">Algerienne</option>
+                        <option value="egypt">Egyptienne</option>
+                        <option value="usa">Americainne</option>
+                        <option value="uk">Anglaise</option>
+                    </select><br/>
+         </div>
+         <div class ="form-group">
+                Genre  <br> 
+                <input type="radio" name="gender" value="female">Female<br/>
+                <input type="radio" name="gender" value="male">Male<br/>
+                <input type="radio" name="gender" value="uutre">Autre<br/>
+         </div>
+         <div class ="form-group">
+                Interets <br>
+                <input type="checkbox" value="sport" />Sport<br/> 
+                <input type="checkbox" value="lecture" />Lecture<br/> 
+                <input type="checkbox" value="peinture" />Peinture<br/>
+                <input type="checkbox" value="music" />Music<br/>
+                <input type="checkbox" value="camping" />Camping<br/>
+                <input type="checkbox" value="diy" />DIYs<br/>
+         </div>
+         <div class ="form-group">
+                Mot de passe    
+                <input type="password" name="mdp" id="txt_mdp" Placeholder="Votre mot de passe" required /><br/>
+         </div>
+         <div class ="form-group">  Confirmer Mot de passe 
+            
+                <input type="password" name="confirm" id="txt_confirm" Placeholder="Confirmer" required /><br/>
+         </div>
+         <div class ="form-group">
+                <input type="submit" value="Envoyer" class="btn btn-success"/>          
+                  <input type="reset" value="Effacer" class="btn btn-danger"/><br/>
+         </div>
+     </form>
+
+
+</body>
+</html>

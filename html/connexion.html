@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <META HTTP-EQUIV="Refresh"
+     CONTENT="0; URL= http://localhost/cv/html/home.html">
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="../css/style.css"/>
+    <link rel="stylesheet" href="../css/bootstrap.min.css"/>
+    <title>Connexion</title>
+</head>
+<body class="bord">
+        <img src="../Images/formalab.png" width="150" alt="logo formalab"><br/>
+        <br>
+        <a href="index.html"target="_blank" class="btn btn-info">Home</a><br>
+        <br>
+        <a href="inscription.html"target="_blank" class="btn btn-info">Inscription</a><br>
+        <br>
+        <hr>
+        <br>
+        <form class="center" name ="formulaire2" method ="POST" action="../php/connexion.php">
+                <div class ="form-group">
+                    Email    
+                    <input class="pad" type="email" name="E-mail" id="mail" Placeholder="Votre email" required/><br>
+                </div>
+                <div class ="form-group">
+                    Mot de passe    
+                    <input class="pad" type="password" name="mdp" id="txt_mdp" Placeholder="Votre mot de passe" required /><br/>
+                </div>
+                <div>
+                    <input type="submit" value="Envoyer" class="btn btn-success"/>          
+                   <input type="reset" value="Effacer" class="btn btn-danger"/><br/>
+                </div>
+               
+        </form>
+        
+
+</body>
+</html>
